@@ -6,9 +6,9 @@ export default function postTweet(status: string): void {
       status,
     })
     .then(() => {
-      console.log('tweeted successfully');
+      console.log('Tweeted successfully: ', status);
     })
     .catch(err => {
-      console.log(err);
+      console.error('Error when tweeting word: ', err.toString());
     });
 }
