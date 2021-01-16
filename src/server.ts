@@ -1,8 +1,7 @@
 import express from 'express';
+import './cronjobs/constantTweeting';
 
 const app = express();
-
-// saySomethingIsCommunist();
 
 app.get('/', (req, res) => {
   return res.send(new Date());
